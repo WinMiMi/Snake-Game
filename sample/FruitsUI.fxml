@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FruitsController">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #8BE8E5;">
+               <children>
+                  <ImageView fitHeight="156.0" fitWidth="219.0" layoutX="66.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/snake-eat.gif" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblTitle" alignment="CENTER" layoutY="75.0" prefHeight="60.0" prefWidth="300.0" text="Cuto-Charm Crawl" textAlignment="CENTER">
+                     <font>
+                        <Font name="VT323 Regular" size="40.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnGmail" layoutY="450.0" mnemonicParsing="false" onAction="#processGmail" prefWidth="300.0" style="-fx-background-color: transparant;" text="cutosnakegame@gmail.com" textFill="#2d1de4">
+         <font>
+            <Font name="VT323 Regular" size="20.0" />
+         </font>
+      </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #D5FFE4;">
+               <children>
+                  <Button fx:id="btnCustomized" layoutX="119.0" layoutY="380.0" mnemonicParsing="false" onAction="#processbacktoCustomize" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #45FFCA; -fx-background-radius: 30;" text="Choose">
+                     <font>
+                        <Font name="VT323 Regular" size="30.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Choose Fruits" />
+                     </tooltip>
+                  </Button>
+                  <Label fx:id="lblStatus" alignment="CENTER" layoutY="25.0" prefHeight="60.0" prefWidth="400.0" text="Choose Fruits">
+                     <font>
+                        <Font name="VT323 Regular" size="50.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnRandomFruit" layoutX="25.0" layoutY="130.0" mnemonicParsing="false" onAction="#processRandomFruit" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Fruits.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Random Fruits" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnApple" layoutX="95.0" layoutY="130.0" mnemonicParsing="false" onAction="#processApple" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_apple.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Apple" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnBerry" layoutX="165.0" layoutY="130.0" mnemonicParsing="false" onAction="#processBerry" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_berry.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Strawberry" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnCherry" layoutX="235.0" layoutY="130.0" mnemonicParsing="false" onAction="#processCherry" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_cherry.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Cherry" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnCoconut" layoutX="305.0" layoutY="130.0" mnemonicParsing="false" onAction="#processCoconut" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_coconut_.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Coconut" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnOrange" layoutX="25.0" layoutY="270.0" mnemonicParsing="false" onAction="#processOrange" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Orange" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnPeach" layoutX="95.0" layoutY="270.0" mnemonicParsing="false" onAction="#processPeach" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Peach" />
+                     </tooltip>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_peach.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPomegranate" layoutX="165.0" layoutY="270.0" mnemonicParsing="false" onAction="#processPomegranate" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_pomegranate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Pomegranate" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnMelon" layoutX="233.0" layoutY="270.0" mnemonicParsing="false" onAction="#processMelon" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_watermelon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Watermelon" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnBanana" layoutX="304.0" layoutY="270.0" mnemonicParsing="false" onAction="#processBanana" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_banana.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Banana" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="btnHome" layoutX="314.0" layoutY="420.0" mnemonicParsing="false" onAction="#processgotoHome" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-background-radius: 30;">
+                     <font>
+                        <Font name="Broadway" size="15.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Go to Home" />
+                     </tooltip>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </children>
+</AnchorPane>
