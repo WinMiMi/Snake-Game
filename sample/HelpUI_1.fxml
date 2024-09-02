@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HelpController_1">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #8BE8E5;">
+               <children>
+                  <ImageView fitHeight="156.0" fitWidth="170.0" layoutX="73.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/snake-dancing.gif" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblTitle" alignment="CENTER" layoutY="75.0" prefHeight="60.0" prefWidth="300.0" text="Cuto-Charm Crawl" textAlignment="CENTER">
+                     <font>
+                        <Font name="VT323 Regular" size="40.0" />
+                     </font>
+                  </Label>
+                    <Button fx:id="btnGmail" layoutY="450.0" mnemonicParsing="false" onAction="#processGmail" prefWidth="300.0" style="-fx-background-color: transparant;" text="cutosnakegame@gmail.com" textFill="#2d1de4">
+         <font>
+            <Font name="VT323 Regular" size="20.0" />
+         </font>
+      </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #D5FFE4;">
+               <children>
+                  <Text fill="#0900ff81" layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let me introduce Some Rules" textAlignment="CENTER" wrappingWidth="290.6666259765625">
+                     <font>
+                        <Font name="VT323 Regular" size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="164.0" layoutX="234.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/rules.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="12.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guide the snake using the arrow keys (up, down, left, right). It moves continuously in one direction." textAlignment="CENTER" wrappingWidth="269.99993896484375">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font></Text>
+                  <Label layoutX="6.0" layoutY="132.0" prefHeight="19.0" prefWidth="280.0" text="Snake moves and control : " textAlignment="CENTER" textFill="#0900ffa4" wrapText="true">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Button layoutX="292.0" layoutY="14.0" mnemonicParsing="false" onAction="#processSkip" style="-fx-background-color: transparent;" text="Skip">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/skip.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="278.0" layoutY="443.0" mnemonicParsing="false" onAction="#processNext" style="-fx-background-color: transparent;" text="Next">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/forward.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="6.0" layoutY="354.0" prefHeight="19.0" prefWidth="280.0" text="Avoid Crashes And Danger Zones :" textAlignment="CENTER" textFill="#0900ffa4" wrapText="true">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Text layoutX="14.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start with 3 lives.  Eating food increases parts and earns points! Eat food, avoid bombs! Food= +5 points, Bombs = -5 points &amp; lose a life." textAlignment="CENTER" wrappingWidth="263.333251953125">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font></Text>
+                  <Label layoutX="6.0" layoutY="233.0" prefHeight="19.0" prefWidth="280.0" text="Objectives, Lives and Growth :" textAlignment="CENTER" textFill="#0900ffa4" wrapText="true">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Text layoutX="11.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beware dynamite! Stay away from self and boundary collisions. Collisions lead to game over!" textAlignment="CENTER" wrappingWidth="269.99993896484375">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font></Text>
+                  <Button layoutX="7.0" layoutY="452.0" mnemonicParsing="false" onAction="#processBack" style="-fx-background-color: transparent;" text="Back">
+                     <font>
+                        <Font name="VT323 Regular" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/back.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
